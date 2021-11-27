@@ -9,16 +9,15 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark bg-success">
     <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar15" style="">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar15">
         <ul class="navbar-nav">
-          <li class="nav-item mx-2"> <a class="nav-link" href="http://127.0.0.1:5000/falec">Fale Conosco</a> </li>
           <li class="nav-item mx-2"> <a class="nav-link navbar-brand mr-0 text-white" href="{{ url_for("index") }}"><i class="fa d-inline fa-lg fa-stop-circle-o"></i>
-              <b> IMPOSTÔMETRO</b></a> </li>
-          <li class="nav-item mx-2"> <a class="nav-link" href="http://127.0.0.1:5000/info">Informações</a></li>
+              <b> IMPOSTO ESPIRITO SANTO</b></a> </li>
+          <li class="nav-item mx-2"> <a class="nav-link" href="http://127.0.0.1:5000/mapa">Navegue pelo Mapa</a></li>
         </ul>
       </div>
     </div>
@@ -27,41 +26,91 @@
     <div class="container">
       <div class="row">
         <div class="ml-auto col-lg-7 text-center text-lg-left">
-          <h1>Impostômetro</h1>
-          <p class="mb-0">Selecione um estado para ver a sua arrecadação.</p>
+          <h1>Imposto ES</h1>
+          <p class="mb-0">Selecione um municipio do ES  para ver a sua arrecadação.</p>
         </div>
         <div class="col-lg-4 d-flex justify-content-center align-items-center p-3">
           <form class="form-inline mb-0" method="get">
-            <div class="input-group"> <input list="municipio" name="municipio" class="form-control" placeholder="Selecione um estado" id="form2">
+            <div class="input-group"> <input list="municipio" name="municipio" class="form-control" placeholder="Selecione Municipio" id="form2">
                 <datalist id="municipio">
-                    <option value="Serra">Serra</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="PR">Paraná</option>
-                    <option value="RJ">Rioo de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="TO">Tocantins</option>
-
+                    <option value="afonso-claudio">AFONSO CLAUDIO</option>
+                    <option value="aguia-branca">AGUIA BRANCA</option>
+                    <option value="agua-doce-do-norte">AGUA DOCE DO NORTE</option>
+                    <option value="alegre">ALEGRE</option>
+                    <option value="alfredo-chaves">ALFREDO CHAVES</option>
+                    <option value="alto-rio-novo">ALTO RIO NOVO</option>
+                    <option value="anchieta">ANCHIETA</option>
+                    <option value="apiaca">APIACA</option>
+                    <option value="aracruz">ARACRUZ</option>
+                    <option value="atilio-vivacqua">ATILIO VIVACQUA</option>
+                    <option value="baixo-guandu">BAIXO GUANDU</option>
+                    <option value="barra-de-sao-francisco">BARRA DE SAO FRANCISCO</option>
+                    <option value="boa-esperanca">BOA ESPERANCA</option>
+                    <option value="bom-jesus-do-norte">BOM JESUS DO NORTE</option>
+                    <option value="brejetuba">BREJETUBA</option>
+                    <option value="cachoeiro-de-itapemirim">CACHOEIRO DE ITAPEMIRIM</option>
+                    <option value="cariacica">CARIACICA</option>
+                    <option value="castelo">CASTELO</option>
+                    <option value="colatina">COLATINA</option>
+                    <option value="conceicao-da-barra">CONCEICAO DA BARRA</option>
+                    <option value="conceicao-do-castelo">CONCEICAO DO CASTELO</option>
+                    <option value="divino-de-sao-lourenco">DIVINO DE SAO LOURENCO</option>
+                    <option value="domingos-martins">DOMINGOS MARTINS</option>
+                    <option value="dores-do-rio-preto">DORES DO RIO PRETO</option>
+                    <option value="ecoporanga">ECOPORANGA</option>
+                    <option value="fundao">FUNDAO</option>
+                    <option value="governador-lindenberg">GOVERNADOR LINDENBERG</option>
+                    <option value="guacui">GUACUI</option>
+                    <option value="guarapari">GUARAPARI</option>
+                    <option value="ibatiba">IBATIBA</option>
+                    <option value="ibiracu">IBIRACU</option>
+                    <option value="ibitirama">IBITIRAMA</option>
+                    <option value="iconha">ICONHA</option>
+                    <option value="irupi">IRUPI</option>
+                    <option value="itaguacu">ITAGUACU</option>
+                    <option value="itapemirim">ITAPEMIRIM</option>
+                    <option value="itarana">ITARANA</option>
+                    <option value="iuna">IUNA</option>
+                    <option value="jaguare">JAGUARE</option>
+                    <option value="jeronimo-monteiro">JERONIMO MONTEIRO</option>
+                    <option value="joao-neiva">JOAO NEIVA</option>
+                    <option value="laranja-da-terra">LARANJA DA TERRA</option>
+                    <option value="linhares">LINHARES</option>
+                    <option value="mantenopolis">MANTENOPOLIS</option>
+                    <option value="marataizes">MARATAIZES</option>
+                    <option value="marechal-floriano">MARECHAL FLORIANO</option>
+                    <option value="marilandia">MARILANDIA</option>
+                    <option value="mimoso-do-sul">MIMOSO DO SUL</option>
+                    <option value="montanha">MONTANHA</option>
+                    <option value="mucurici">MUCURICI</option>
+                    <option value="muniz-freire">MUNIZ FREIRE</option>
+                    <option value="muqui">MUQUI</option>
+                    <option value="nova-venecia">NOVA VENECIA</option>
+                    <option value="pancas">PANCAS</option>
+                    <option value="pedro-canario">PEDRO CANARIO</option>
+                    <option value="pinheiros">PINHEIROS</option>
+                    <option value="piuma">PIUMA</option>
+                    <option value="ponto-belo">PONTO BELO</option>
+                    <option value="presidente-kennedy">PRESIDENTE KENNEDY</option>
+                    <option value="rio-bananal">RIO BANANAL</option>
+                    <option value="rio-novo-do-sul">RIO NOVO DO SUL</option>
+                    <option value="santa-leopoldina">SANTA LEOPOLDINA</option>
+                    <option value="santa-maria-de-jetiba">SANTA MARIA DE JETIBA</option>
+                    <option value="santa-teresa">SANTA TERESA</option>
+                    <option value="sao-domingos-do-norte">SAO DOMINGOS DO NORTE</option>
+                    <option value="sao-gabriel-da-palha">SAO GABRIEL DA PALHA</option>
+                    <option value="sao-jose-do-calcado">SAO JOSE DO CALCADO</option>
+                    <option value="sao-mateus">SAO MATEUS</option>
+                    <option value="sao-roque-do-canaa">SAO ROQUE DO CANAA</option>
+                    <option value="serra">SERRA</option>
+                    <option value="sooretama">SOORETAMA</option>
+                    <option value="vargem-alta">VARGEM ALTA</option>
+                    <option value="venda-nova-do-imigrante">VENDA NOVA DO IMIGRANTE</option>
+                    <option value="viana">VIANA</option>
+                    <option value="vila-pavao">VILA PAVAO</option>
+                    <option value="vila-valerio">VILA VALERIO</option>
+                    <option value="vila-velha">VILA VELHA</option>
+                    <option value="vitoria">VITORIA</option>
                 </datalist>
               <div class="input-group-append"> <button class="btn btn-primary" type="submit">Pesquisar</button> </div>
             </div>
@@ -89,6 +138,7 @@
   <div class="py-3" >
     <div class="container">
       <div class="row">
+          <a href="https://pt.wikipedia.org/wiki/{{ "municipio" }}_(Espirito_Santo)"></a>
         <div class="col-md-12 text-center">
           <p class="mb-0">Impostômetro - 2021</p>
         </div>
